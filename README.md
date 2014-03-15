@@ -154,7 +154,7 @@ NSNumber *buildingZIPCode = [NSNumber numberWithInteger:10018];
 Declarations
 ============
 
-* Always declare memory-management semantics even on `readonly` properties.  List the management semantics first for consistency (and to match XCode default).
+* Always declare memory-management semantics even on `readonly` properties.  List the management semantics first for consistency (and to match Xcode default).
 
 Good:
 
