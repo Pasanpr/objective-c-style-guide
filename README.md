@@ -618,10 +618,10 @@ When synthesizing the instance variable, use `@synthesize var = _var;` as this p
 @property
 ---------
 
-Property definitions should be used in place of ivars. When defining properties, put strong/weak/retain/assign first then nonatomic for consistency.
+Property definitions should be used in place of ivars. When defining properties, put nonatomic first then strong/weak/retain/assign for consistency.
 
 ```objc
-@property (weak, nonatomic) IBOutlet UIWebView *messageWebView;
+@property (nonatomic, weak) IBOutlet UIWebView *messageWebView;
 ```    
 
 *Note: IBOutlets should be `weak` unless they are a top-level item in a xib (e.g. the top-level view is `strong`, anything beneath it is `weak`)
